@@ -1,5 +1,5 @@
 # wms-thief
-> bulk WMS tile downloader and georeferencer
+> Bulk WMS tile downloader and georeferencer
 
 With ```wms-thief``` you can download WMS images from a server to your local machine. You can define multiple scales for a single run, the result images will be put in the folder named after the scale. The tile geometry and metadata are also saved in a PostGIS database in case you wish to visualize the tile vectors. 
 
