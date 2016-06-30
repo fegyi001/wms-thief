@@ -37,9 +37,9 @@ startY = 43771.2799996209
 endX = 937395.20651658
 endY = 362942.143500254
 # decide whether you wish to use a mask layer for the tiles or not
-use_wkt = False
+use_wkt = True
 # decide whether you wish to store tile vectors and metadata in a PostGIS db
-use_db = False
+use_db = True
 # path to a wkt file for intersection checking
 # it should be in the same crs as stored in the 'crs' variable (e.g. 23700)
 # MANDATORY IF 'use_wkt' is set to True
