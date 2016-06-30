@@ -15,5 +15,9 @@ After downloading, the images are georeferenced and converted into GeoTiff forma
 3. Run the program from the command line: ```python run.py```
 5. Please do not download private or sensitive data
 
+## Example
+
+<p align="center"><img src="examples/img02.png" width="200"></p>
+
 ## Author
 ```wms-thief``` is created by [Gergely Padányi-Gulyás](http://www.gpadanyig.com)
