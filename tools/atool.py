@@ -27,7 +27,7 @@ class Atool(object):
     def handle_exception(self, e):
         exc_type, exc_obj, exc_tb = sys.exc_info()
         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        self.print_colors('! valami hiba tortent', self.FAIL)
+        self.print_colors('Some error occured', self.FAIL)
         print(exc_type, fname, exc_tb.tb_lineno)
 
     # general string file reader
