@@ -15,7 +15,7 @@ After downloading, the images are georeferenced and converted into GeoTiff forma
 3. Run the program from the command line: ```python run.py```
 5. Please do not download private or sensitive data
 
-## Example
+## Examples
 
 <p align="center"><img src="data/images/example1.png" width="600"></p>
 <p align="center"><img src="data/images/example2.png" width="600"></p>
