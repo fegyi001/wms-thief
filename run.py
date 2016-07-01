@@ -21,7 +21,7 @@ wmsParams = None
 # USER DEFINED PARAMETERS #
 ###########################
 
-scales = [4000000, 2000000]
+scales = [4000000, 2000000, 1000000]
 saveDir = r"E:\DATA\wms-thief_tiles"
 url = "http://172.24.0.170:8080/geoserver/wms"
 crs = 23700
