@@ -18,6 +18,7 @@ After downloading, the images are georeferenced and converted into GeoTiff forma
 ## Example
 
 <p align="center"><img src="data/images/example1.png" width="600"></p>
+<p align="center"><img src="data/images/example2.png" width="600"></p>
 
 ## Author
 ```wms-thief``` was created by [Gergely Padányi-Gulyás](http://www.gpadanyig.com)

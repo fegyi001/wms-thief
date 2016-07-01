@@ -39,6 +39,11 @@ endY = 362942.143500254
 use_wkt = True
 # decide whether you wish to store tile vectors and metadata in a PostGIS db
 use_db = True
+# decide whether you wish to clean the vector tiles in the db before processing
+# it is recommended to set to True for the first run
+# it is recommended to set to False if you have already processed a few scales and wish to continue 
+# with another scales but want to keep the previous run's metadata
+clean_db = True
 # path to a wkt file for intersection checking
 # it should be in the same crs as stored in the 'crs' variable (e.g. 23700)
 # MANDATORY IF 'use_wkt' is set to True
@@ -77,7 +82,8 @@ wmsParams = {'dir': saveDir,
              'endx': endX,
              'endy': endY,
              'wkt': ogr.CreateGeometryFromWkt(atool.read_file_content(wktFile)) if use_wkt else None,
-             'db': DbTool(dbParams) if use_db else None}
+             'db': DbTool(dbParams) if use_db else None,
+             'clean_db': clean_db}
 wms = WmsTool(wmsParams)
 
 ###############

@@ -12,8 +12,8 @@ from osgeo import gdal, osr, ogr
 import requests
 
 from PIL import Image
-from tools.atool import Atool
 import numpy as np
+from tools.atool import Atool
 
 
 class WmsTool(object):
@@ -37,6 +37,7 @@ class WmsTool(object):
         self.endY = params.get("endy")
         self.wkt = params.get("wkt")
         self.db = params.get("db")
+        self.clean_db = params.get("clean_db")
         
         # save the tiles in the main dir, under the dir of the layername...
         self.layerDir = self.__get_layerdir()
@@ -202,7 +203,8 @@ class WmsTool(object):
     def process_scales(self):
         if self.db != None:
             self.db.connect()
-            self.db.db_setup(self.crs, self.wkt)
+            if self.clean_db:
+                self.db.db_setup(self.crs, self.wkt)
         # create an output folder with the layer name
         if not os.path.isdir(self.layerDir):
             os.makedirs(self.layerDir)
