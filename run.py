@@ -21,16 +21,20 @@ wmsParams = None
 # USER DEFINED PARAMETERS #
 ###########################
 
+# scales for wms requests
 scales = [4000000, 2000000, 1000000]
+# save directory in the file system
 saveDir = r"E:\DATA\wms-thief_tiles"
+# wms GetMap call parameters
 url = "http://172.24.0.170:8080/geoserver/wms"
+layer = "osmWsp:osm_hungary"
 crs = 23700
 width = 256
 height = width
-layer = "osmWsp:osm_hungary"
 image_format = "png"
 wms_version = "1.3.0"
 styles = ""
+# set the bounding box of the area to process
 startX = 426402.66751693
 startY = 43771.2799996209
 endX = 937395.20651658
