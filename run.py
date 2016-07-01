@@ -42,7 +42,7 @@ use_db = True
 # path to a wkt file for intersection checking
 # it should be in the same crs as stored in the 'crs' variable (e.g. 23700)
 # MANDATORY IF 'use_wkt' is set to True
-wktFile = "intersect_layer_wkt.txt"
+wktFile = "data/wkt/intersect_layer_wkt.txt"
 # database connection parameters
 # MANDATORY IF 'use_db' is set to True
 dbHost = 'localhost'

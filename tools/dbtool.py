@@ -49,7 +49,6 @@ class DbTool(object):
             self.cur.execute("DROP TABLE IF EXISTS bbox")
             self.cur.execute("DROP TABLE IF EXISTS intersect_layer")
             self.cur.execute("CREATE TABLE bbox(id serial not null primary key, layer text, scale int, name text, geom geometry('Polygon', %s))" % crs)
-            print wkt != None
             if wkt != None:
                 self.cur.execute("CREATE TABLE intersect_layer(id serial not null primary key, geom geometry('MultiPolygon', %s))" % crs)
                 self.cur.execute("INSERT INTO intersect_layer(geom) values(st_geomfromtext('%s', %s))" % (wkt, crs))
