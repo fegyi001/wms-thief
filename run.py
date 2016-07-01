@@ -5,12 +5,11 @@ Created on 2016. jún. 29.
 @author: padanyigulyasgergely
 '''
 
-from wms import WmsTool
-
 from osgeo import ogr
 
-from atool import Atool
-from db import DbTool
+from tools.atool import Atool
+from tools.dbtool import DbTool
+from tools.wmstool import WmsTool
 
 
 atool = Atool()

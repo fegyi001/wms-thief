@@ -1,8 +1,4 @@
-/atool.pyc
-/db.pyc
-/wms.pyc
-/qgis.qgs
-/qgis.qgs~
 /.settings/
 /.pydevproject
 /.project
+/*/**/*.pyc

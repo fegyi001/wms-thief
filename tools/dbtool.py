@@ -5,7 +5,7 @@ Created on 2016. jún. 29.
 @author: padanyigulyasgergely
 '''
 import psycopg2
-from atool import Atool
+from tools.atool import Atool
 
 class DbTool(object):
 
